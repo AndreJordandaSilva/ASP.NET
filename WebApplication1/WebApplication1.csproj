@@ -69,15 +69,47 @@
   <ItemGroup>
     <Content Include="About\AboutUS.aspx" />
     <Content Include="About\ContactUS.aspx" />
+    <Content Include="App_Data\KFurniture.mdf" />
+    <Content Include="App_Data\KFurniture_log.ldf">
+      <DependentUpon>KFurniture.mdf</DependentUpon>
+    </Content>
     <Content Include="App_Themes\Normal\Images\logo.jpg" />
     <Content Include="App_Themes\Normal\Normal.css" />
     <Content Include="default.aspx" />
-    <Content Include="Images\Bedroom.jpg" />
-    <Content Include="Images\Sofa.jpg" />
+    <Content Include="Images\Bedroom\DBwarm.jpg" />
+    <Content Include="Images\Bedroom\QBbeach.jpg" />
+    <Content Include="Images\Bedroom\QBhavana.jpg" />
+    <Content Include="Images\Bedroom\QBtimber.jpg" />
+    <Content Include="Images\Bedroom\SBbarbie.jpg" />
+    <Content Include="Images\Bedroom\SBbondi.jpg" />
+    <Content Include="Images\Bedroom\SBfoldable.jpg" />
+    <Content Include="Images\Bedroom\SBjb.jpg" />
+    <Content Include="Images\Bedroom\SBmadona.jpg" />
+    <Content Include="Images\Bedroom\SBstorage.jpg" />
+    <Content Include="Images\Sofa large\largeBNSsofa.jpg" />
+    <Content Include="Images\Sofa large\largebyronsofa.jpg" />
+    <Content Include="Images\Sofa large\largecansofa.jpg" />
+    <Content Include="Images\Sofa large\largechillaxsofa.jpg" />
+    <Content Include="Images\Sofa large\largecoolsofa.jpg" />
+    <Content Include="Images\Sofa large\largeFofoSofa.jpg" />
+    <Content Include="Images\Sofa large\largeHTMSOFA.jpg" />
+    <Content Include="Images\Sofa large\largenewcastlesofa.jpg" />
+    <Content Include="Images\Sofa large\largesydneysofa.jpg" />
+    <Content Include="Images\Sofa large\largevictoriasofajpg.jpg" />
+    <Content Include="Images\Sofa\BNSsofa.jpg" />
+    <Content Include="Images\Sofa\byronsofa.jpg" />
+    <Content Include="Images\Sofa\cansofa.jpg" />
+    <Content Include="Images\Sofa\chillaxsofa.jpg" />
+    <Content Include="Images\Sofa\coolsofa.jpg" />
+    <Content Include="Images\Sofa\FofoSofa.jpg" />
+    <Content Include="Images\Sofa\HTMSOFA.jpg" />
+    <Content Include="Images\Sofa\newcastlesofa.jpg" />
+    <Content Include="Images\Sofa\sydneysofa.jpg" />
+    <Content Include="Images\Sofa\victoriasofajpg.jpg" />
+    <Content Include="Pages\AddEditDelete.aspx" />
     <Content Include="Pages\Bedrooms.aspx" />
     <Content Include="Copyright.aspx" />
     <Content Include="Pages\OurRange.aspx" />
-    <Content Include="Pages\Register.aspx" />
     <Content Include="Pages\Sofas.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -112,6 +144,13 @@
     <Compile Include="MasterPage.Master.designer.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>
     </Compile>
+    <Compile Include="Pages\AddEditDelete.aspx.cs">
+      <DependentUpon>AddEditDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AddEditDelete.aspx.designer.cs">
+      <DependentUpon>AddEditDelete.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Bedrooms.aspx.cs">
       <DependentUpon>Bedrooms.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -132,13 +171,6 @@
     </Compile>
     <Compile Include="Pages\OurRange.aspx.designer.cs">
       <DependentUpon>OurRange.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\Register.aspx.cs">
-      <DependentUpon>Register.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Pages\Register.aspx.designer.cs">
-      <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Sofas.aspx.cs">
       <DependentUpon>Sofas.aspx</DependentUpon>

@@ -1,4 +1,21 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="ContactUS.aspx.cs" Inherits="WebApplication1.About.ContactUS" %>
+
+<script runat="server">
+
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+       if (Page.IsValid)
+       {
+          SuccessMessage.Text = "Thank You";
+       }
+       else
+       {
+          ErrorMessage.Text = "Fill up all the fields";
+       }
+
+    }
+</script>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
     <style type="text/css">
@@ -44,7 +61,7 @@
                    </tr>  
                     <tr>  
                         <td class="auto-style3">  
-                            <asp:TextBox ID="TextBox4" runat="server" Width="299px"></asp:TextBox>
+                            <asp:TextBox ID="TextBox4" runat="server" Width="299px" TextMode="Email"></asp:TextBox>
                         </td>  
                    </tr>  
                     <tr>  
@@ -54,7 +71,7 @@
                    </tr>  
                     <tr>  
                         <td class="auto-style11">  
-                            <asp:TextBox ID="TextBox2" runat="server" Width="300px"></asp:TextBox>
+                            <asp:TextBox ID="TextBox2" runat="server" Width="300px" TextMode="Number"></asp:TextBox>
                         </td>  
                     </tr>  
                     <tr>  
@@ -64,14 +81,26 @@
                     </tr>  
                     <tr>  
                         <td class="auto-style11">  
-                            <asp:TextBox ID="TextBox3" runat="server" Height="140px" Width="300px"></asp:TextBox>
+                            <asp:TextBox ID="TextBox3" runat="server" Height="140px" Width="300px" TextMode="MultiLine"></asp:TextBox>
                         </td>  
                     </tr>
                     <tr>  
                         <td class="auto-style11">  
-                            <asp:Button ID="Button1" runat="server" Text="Submit" />
+                            <asp:Button ID="Button1" runat="server" Text="Submit" OnClick="Button1_Click" />
                             
                         </td>  
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td colspan="2">
+                            <asp:label text="" id="SuccessMessage" runat="server" forecolor="Green" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td colspan="2">
+                            <asp:label text="" id="ErrorMessage" runat="server" forecolor="Red" />
+                        </td>
                     </tr>
             </table>
         </div>

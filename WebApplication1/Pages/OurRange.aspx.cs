@@ -11,7 +11,10 @@ namespace WebApplication1.Pages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["UserName"] == null)
+            {
+                Response.Redirect("Default.aspx");
+            }
         }
 
         protected void ImageMap1_Click(object sender, ImageMapEventArgs e)

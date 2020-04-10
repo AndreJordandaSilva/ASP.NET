@@ -34,5 +34,3 @@ C:\Users\ajord\source\repos\WebApplication1\obj\Debug\WebApplication1.csproj.Cor
 C:\Users\ajord\source\repos\WebApplication1\obj\Debug\WebApplication1.csproj.CopyComplete
 C:\Users\ajord\source\repos\WebApplication1\obj\Debug\WebApplication1.dll
 C:\Users\ajord\source\repos\WebApplication1\obj\Debug\WebApplication1.pdb
-C:\Users\ajord\Desktop\WebApplication1\obj\Debug\WebApplication1.dll
-C:\Users\ajord\Desktop\WebApplication1\obj\Debug\WebApplication1.pdb

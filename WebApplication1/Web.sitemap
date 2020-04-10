@@ -2,19 +2,20 @@
 <siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0">
   
   <siteMapNode url="#" title="Home" description="Home">
-    <siteMapNode url="~/default.aspx" title="Home" description="Home" /> 
+    <siteMapNode url="Default.aspx" title="Home" description="Home" /> 
     
-    <siteMapNode url="~/Pages/OurRange.aspx" title="Our Range" description="/">
+    <siteMapNode url="~/Pages/OurRange.aspx" title="Our Range" description="Our Range">
       <siteMapNode url="~/Pages/Bedrooms.aspx" title="Bedrooms" description="All Reviews Grouped by Genre" />
       <siteMapNode url="~/Pages/Sofas.aspx" title="Sofas" description="All Reviews" />
     </siteMapNode>
     
-    <siteMapNode url="" title="About Us" description="About this Site">
-      <siteMapNode url="~/About/AboutUs.aspx" title="About Us" description="Contact Us" />
-      <siteMapNode url="~/About/ContactUS.aspx" title="Contact Us" description="About Us" />
+    <siteMapNode url="~/" title="About" description="About this Site">
+      <siteMapNode url="~/About/AboutUs.aspx" title="About" description="About Us" />
+      <siteMapNode url="~/About/ContactUS.aspx" title="Contact" description="Contact Us" />
     </siteMapNode>
     
     <siteMapNode url="~/Pages/Register.aspx" title="Register" description="Register" />
+
     
   </siteMapNode>
   
