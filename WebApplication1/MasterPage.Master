@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.Master.cs" Inherits="WebApplication1.MasterPpge" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Koala Furniture</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="Container">
+            <header><a href="/">
+             </a></header>
+           <nav class="navbar">
+                <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" Orientation="Horizontal" StaticEnableDefaultPopOutImage="False">
+                </asp:Menu>
+                <asp:SiteMapDataSource ID="SiteMapDataSource1"  runat="server" StartingNodeOffset="0" ShowStartingNode="false" />
+            </nav>
+            <div id="Content">
+                <aside> 
+                     <asp:Login ID="Login1" runat="server" OnAuthenticate="Login1_Authenticate" Width="200px">
+                     </asp:Login>
+                </aside>
+                <section>
+                    <asp:SiteMapPath ID="SiteMapPath1" runat="server">
+                    </asp:SiteMapPath>
+
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                </section>
+            </div>           
+            <footer>
+                <div>
+                    <p>
+                        <a href="/Copyright.aspx"> Copyright © - Andre Jordan da Silva 2019 </a>
+                        
+                    </p>
+                </div>
+              
+            </footer>
+        </div>
+    </form>
+</body>
+</html>

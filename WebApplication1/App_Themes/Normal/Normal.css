@@ -1,0 +1,182 @@
+﻿*{
+  font-family: Arial, Sans-Serif;
+}
+
+body {
+    margin: 0;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,0.6167600829394257) 100%);
+}
+
+a{
+     text-decoration: none;
+     color: #0760B2;
+}
+
+a:hover  {
+    text-decoration: underline;
+  }
+
+h1{
+    font-size: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+p{
+    margin: 20px; 
+}
+
+#Container{
+    width: 960px;
+    margin: auto;
+}
+
+header {
+    background-image: url(/App_Themes/Normal/Images/logo.jpg);
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    width: 960px;
+    height: 90px;
+}
+
+header a  {
+    width: 960px;
+    height: 90px;
+    display: block;
+  }
+
+nav{
+    background:white;
+      
+
+}
+
+nav ul{
+    display: flex;
+    justify-content:flex-start;
+    margin:0 auto;
+    padding:0;
+    
+}
+
+nav ul li{
+    list-style:none;
+    position:relative;
+    padding:10px 0;
+     width: 240px;
+    text-align: center;
+    border-left:1px solid rgba(255, 255, 255,.2);
+}
+
+nav ul li:hover{
+    background: #e5c7c7;
+}
+
+nav ul li:first-child{
+    border-left:none;
+   
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    padding: 0 20px;
+    color:black;
+}
+
+nav ul li ul{
+    position: absolute;
+    background:white;
+    left:0;
+    right:0;
+    display:block;
+    transition:0.5s;
+    opacity:0;
+    visibility:hidden;
+}
+
+nav ul li:hover ul{
+    opacity:1;
+    visibility:visible;
+
+}
+
+nav ul li ul li{
+    border-left:none;
+    border-bottom: 1px solid rgba(255, 255, 255,.2);
+}
+
+section {
+    background-color: white;
+    opacity: 0.7;
+    height: 768px;
+    width: 710px;
+    float: right;
+   
+}
+
+aside {
+    font-size: 0.8rem;
+    color: black;
+    background-color: white;
+    width: 250px;
+    height: 768px;
+    float: left;
+    opacity: 0.8;
+     text-align: center;
+}
+
+.card {
+    text-align:center;
+    width: 300px;
+    height: 150px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.card img {
+    width: 300px;
+    height: 150px;
+ }
+
+.row {
+    display: flex;
+}
+
+.registration {
+    margin: auto;
+    margin-top: 100px;
+   
+}
+.card-table {
+    text-align: center;
+    width: 300px;
+    height: 150px;
+    margin: auto;
+    margin-top: 50px;
+}
+.card-table img {
+    width: 300px;
+    height: 150px;
+}
+
+#table {
+  
+    text-align: center;
+    margin: auto;
+}
+
+
+footer {
+    width: 960px;
+    clear: both;
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-size: 0.7em;
+    font-weight: bold;
+    line-height: 37px;
+    opacity: 0.8;
+}
+
